@@ -1,0 +1,47 @@
+{
+	"name": "coDragRuler",
+	"title": "Chroniques Oubliées - Drag Ruler",
+	"description": "Intégration de Drag Ruler dans le système Chroniques Oubliées",
+	"author": "Eryan",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.7.9",
+	"compatibleCoreVersion": "0.7.9",
+	"systems": [
+		"cof",
+		"coc"
+	],
+	"esmodules": [
+		"main.js"
+	],
+    "packs":[
+        {
+            "name": "macros",
+            "label": "Macros CoDragRuler",
+            "system": "cof",
+            "path": "macros.db",
+            "entity": "Macro",
+            "tag": "macro"
+        },
+		{
+            "name": "macros",
+            "label": "Macros CoDragRuler",
+            "system": "coc",
+            "path": "macros.db",
+            "entity": "Macro",
+            "tag": "macro"
+        }
+    ],
+	"dependencies": [
+		{
+			"name": "drag-ruler",
+			"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
+		},
+		{
+			"name": "socketlib",
+			"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
+		}
+	],
+	"url": "https://github.com/Eryan9/coDragRuler",
+	"manifest": "https://raw.githubusercontent.com/Eryan9/coDragRuler/main/module.json",
+	"download": "https://github.com/Eryan9/coDragRuler/archive/refs/heads/main.zip"
+}
